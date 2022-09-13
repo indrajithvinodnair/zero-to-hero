@@ -7,6 +7,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

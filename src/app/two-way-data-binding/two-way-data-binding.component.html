@@ -1,0 +1,22 @@
+<div class="container">
+    <h4>Two way data binding</h4>
+    <p>Two way data binding is used when the data flow is required to be bidirectional <br>That is data should flow from
+        Model to View and from View to Model.<br> </p>
+
+    <p>The syntax used by the two way data binding is the banana in the box syntax [ ( ) ]</p>
+
+    <p>It uses the ngModel directive </p>
+
+    <p>The in the input box is populated with the data from the model by default <br> and when it is changed from the
+        view <br>Since the data flow is bidirectional, the data in the model will also be changed</p>
+
+    <input type="text" [(ngModel)]="username">
+
+    <br>
+
+    <p>The value of the variable username in Model is : {{username}}</p>
+
+
+
+
+</div>
