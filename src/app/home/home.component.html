@@ -6,11 +6,17 @@
         <ngb-accordion [closeOthers]="true" activeIds="static-1">
             <ngb-panel id="static-1" title="Data Binding">
                 <ng-template ngbPanelContent>
+                    Data binding is used to syncronize view with the model and vice versa. <br>
                     There are two types of data binding in angular. They are <br>
 
                     <div class="btn">
                         <input type="button" class="btn btn-success" value="One way data binding"
                             (click)="goToRoute('one-way-data-binding')">
+                    </div>
+
+                    <div class="btn">
+                        <input type="button" class="btn btn-success" value="Two way data binding"
+                            (click)="goToRoute('two-way-data-binding')">
                     </div>
 
 

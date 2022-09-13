@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
+  text = "Hello wold";
+
+  username = "user";
+
+  isDisabled = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  displayMsg() {
+    alert("Button clicked");
   }
 
 }

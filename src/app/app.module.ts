@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
-    HomeComponent
+    HomeComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,

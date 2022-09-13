@@ -1,1 +1,52 @@
-<p>data-binding works!</p>
+<div class="container">
+    <h4>One way data binding</h4>
+
+
+    <p> This essentially means that the data flow takes place only in one direction <br> That is either from View to
+        Model or from Model to View and never simultaniously</p>
+    <h5> Interpolation</h5>
+    <p>The value of the text variable diplayed in this paragraph is populated using string Interpolation <br>
+        of the text variable stored in component </p>
+    <p>The one important thing about string interpolation is that eveything within the curly braces are<br>
+        considered as string. The type of the variable defined in the component doesnt matter <br>
+        String interpolation always considers the content within the curly braces as string elements</p>
+
+    <p>text = {{text}}</p>
+
+    <h5>Property Binding</h5>
+    <p>Property binding is used to set values for the attributes of target elements</p>
+
+    <p>The syntax is [value]="variable" <br>The value can by any valid property of an element</p>
+
+    <p>Here is the username field have the deault value of user, it is populated using the username variable in the
+        component</p>
+
+    <input type="text" [value]="username" placeholder=" Username" aria-label=" Username"
+        aria-describedby="basic-addon2">
+    <br>
+    <p>The advantage of using property binding is that the values <br> are considered to be of their original
+        data type.br <br>That is, if there is a boolean variable in the component, it can be used to set value for
+        <br>
+        a components propertywhich accepts boolean values . <br>
+        Where as if we were to use string interpolation, then the values would sure be considered as string only.
+    </p>
+
+    <p>The text box shown below is set as disabled by setting the disabled property as true using a boolean variable
+    </p>
+
+    <input type="text" [disabled]="isDisabled">
+
+    <h5> Event Binding</h5>
+
+    <p>This is used for calling functions upon events such as keystroke, click, hover etc</p>
+
+    <p>The button calls an displayMsg() when it is clicked</p>
+
+    <p>Syntax is (click)="function()"</p>
+
+    <input type="button" value="Click" class="btn btn-secondary" (click)="displayMsg()">
+
+
+
+
+</div>

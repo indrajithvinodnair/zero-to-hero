@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
     if (path == 'one-way-data-binding') {
       this.router.navigate(['data-binding']);
     }
+    else {
+      this.router.navigate(['two-way-data-binding']);
+    }
 
   }
 
