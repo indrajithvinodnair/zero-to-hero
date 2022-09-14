@@ -16,8 +16,21 @@ export class HomeComponent implements OnInit {
     if (path == 'one-way-data-binding') {
       this.router.navigate(['data-binding']);
     }
-    else {
+    else if (path == 'two-way-data-binding') {
       this.router.navigate(['two-way-data-binding']);
+    }
+
+    else if (path == 'structual-directives') {
+      this.router.navigate(['structual-directives']);
+    }
+    else if (path == 'attribute-directives') {
+      this.router.navigate(['attribute-directives']);
+    }
+    else if (path == 'dependency-injection') {
+      this.router.navigate(['dependency-injection']);
+    }
+    else if (path == 'services') {
+      this.router.navigate(['services']);
     }
 
   }

@@ -1,0 +1,44 @@
+<div class="container">
+    <h4>Structural Directives</h4>
+    <p>Structural directives are used to change the DOM layout by either removing or adding elements.
+        These directives have the * symbol as prefix.
+    </p>
+
+    <p>The *ngIf, *ngFor,*ngSwitch are the examples of this directive.</p>
+
+    <p>Interact with the radio buttons to render an element conditionally using *ngIF</p>
+
+    <form #myForm="ngForm" (submit)="formData(myForm.value)" novalidate>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="on" checked
+                ngModel>
+            <label class="form-check-label" for="exampleRadios1">
+                On
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="off" ngModel>
+            <label class="form-check-label" for="exampleRadios2">
+                Off
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <br>
+
+    <div class=" demo" *ngIf="isVisible">
+
+        <p>The content inside this content is visible only when the radio button is on the on state.</p>
+
+        <p>This is made possible using *ngIf</p>
+
+    </div>
+
+    <p>Other commonly used structual-directives are the *ngFor which can be used to render data on View as table rows or
+        as div elements and *ngSwitch which <br>
+        is used to check the value of a varible inside a switch statement and render DOM elements accordingly.</p>
+
+</div>

@@ -24,24 +24,71 @@
             </ngb-panel>
 
 
-            <ngb-panel id="static-2" title="Simple">
+            <ngb-panel id="static-2" title="Directives">
                 <ng-template ngbPanelContent>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon
-                    officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-                    wolf moon
-                    tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                    keffiyeh
-                    helvetica,
-                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                    lomo.
-                    Leggings
-                    occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of
-                    them
-                    accusamus
-                    labore sustainable VHS.
+                    Directives are used to attach a specific behavious to an object in the View.
+                    It starts with ng which stands for angular.
+
+                    <br> The directives are of three types
+
+                    <br>
+
+                    <div class="btn">
+                        <input type="button" class="btn btn-success" value="components"
+                            (click)="goToRoute('components')">
+                    </div>
+
+                    <br>
+
+                    <div class="btn">
+                        <input type="button" class="btn btn-success" value="structural directives"
+                            (click)="goToRoute('structual-directives')">
+                    </div>
+
+                    <br>
+
+                    <div class="btn">
+                        <input type="button" class="btn btn-success" value="attribute directives"
+                            (click)="goToRoute('attribute-directives')">
+                    </div>
+
+
+
+
+                </ng-template>
+            </ngb-panel>
+
+            <ngb-panel id="static-3" title="Dependency Injection">
+                <ng-template ngbPanelContent>
+                    Dependency injection is simply put the process of giving a function , its instance variables.
+                    Instead of hardcoding the values ourselves, we dynamically give values to the <br> instance
+                    variables using the values from a function call
+                    or from a constructor etc.
+                    <br>
+
+                    <div class="btn">
+                        <input type="button" class="btn btn-success" value="Dependency Injection"
+                            (click)="goToRoute('dependency-injection')">
+                    </div>
+
+                </ng-template>
+            </ngb-panel>
+
+            <ngb-panel id="static-4" title="Services">
+                <ng-template ngbPanelContent>
+                    Services are functions which are shared among many components. This reduces code redundancy and
+                    promotes reusability and maintainability.
+
+                    <br> The services will have a single well defined function and it is different from the functions in
+                    components <br>
+                    as they use dependency injection.
+
+                    <br>
+
+                    <div class="btn">
+                        <input type="button" class="btn btn-success" value="services" (click)="goToRoute('services')">
+                    </div>
+
                 </ng-template>
             </ngb-panel>
 
